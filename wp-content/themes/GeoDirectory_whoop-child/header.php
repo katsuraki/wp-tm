@@ -9,7 +9,7 @@
 <?php // mobile meta (hooray!) ?>
 <meta name="HandheldFriendly" content="True" />
 <meta name="MobileOptimized" content="320" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0 " />
 <?php global $gdf;?>
 <link rel="apple-touch-icon" href="<?php echo $gdf['site_apple_touch_icon']['url']; ?>">
 <link rel="icon" href="<?php echo $gdf['site_favicon']['url']; ?>">
@@ -22,7 +22,9 @@
 <?php // end of wordpress head ?>
 <?php // drop Google Analytics Here ?>
 <?php // end analytics ?>
+
 </head>
+<script type="text/javascript" src="https://test02.tamzang.com/wp-content/themes/GeoDirectory_whoop-child/onesignal_iosandandroid.js"></script>
 <body <?php body_class(); ?>>
 <div id="container">
   <?php if ( is_front_page() ) { ?>
@@ -344,7 +346,9 @@
           }?>
       </div>
     </header>
+	<?php kento_notify(); ?>
 <?php } ?>
 <script type="text/javascript">
     var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
 </script>
+
